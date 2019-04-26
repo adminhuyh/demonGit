@@ -8,67 +8,86 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class SendUtil {
-
-	/**
-	 * 把内容发送给URL
-	 * 
-	 * @param sendtext
-	 * @param urll
-	 * @param encoding
-	 * @return
-	 * @throws Exception
-	 */
+    /**
+     * 
+     * @Title: sendToUrl
+     * @Description: (这里用一句话描述这个方法的作用)
+     * @param sendtext
+     * @param urll
+     * @param encoding
+     * @return
+     * @throws Exception String (这里描述输出参数的作用)
+     * @throws
+     * @author zslt_hyh
+     * @date 2019年4月26日 下午3:10:47
+     */
 	public static String sendToUrl(String sendtext, String urll, String encoding) throws Exception {
 		return sendToUrl(sendtext, urll, encoding, 10);
 	}
 	
-	/**
-	 * 把内容发送给URL
-	 * 
-	 * @param sendtext
-	 * @param urll
-	 * @param encoding
-	 * @return
-	 * @throws Exception
-	 */
+    /**
+     * 
+     * @Title: sendToUrl
+     * @Description: (这里用一句话描述这个方法的作用)
+     * @param sendtext
+     * @param urll
+     * @return
+     * @throws Exception String (这里描述输出参数的作用)
+     * @throws
+     * @author zslt_hyh
+     * @date 2019年4月26日 下午3:11:02
+     */
 	public static String sendToUrl(String sendtext, String urll) throws Exception {
 		return sendToUrl(sendtext, urll, "utf-8", 10);
 	}
 	
 	/**
-	 * 把内容发送给URL
 	 * 
-	 * @param sendtext
+	 * @Title: sendToUrl
+	 * @Description: (这里用一句话描述这个方法的作用)
 	 * @param urll
-	 * @param encoding
 	 * @return
-	 * @throws Exception
+	 * @throws Exception String (这里描述输出参数的作用)
+	 * @throws
+	 * @author zslt_hyh
+	 * @date 2019年4月26日 下午3:11:06
 	 */
 	public static String sendToUrl(String urll) throws Exception {
 		return sendToUrl("", urll, "utf-8", 10);
 	}
 	
+	
 	/**
-	 * 把内容发送给URL
 	 * 
+	 * @Title: sendToUrl
+	 * @Description: (这里用一句话描述这个方法的作用)
 	 * @param sendtext
 	 * @param urll
-	 * @param encoding
+	 * @param seconds
 	 * @return
-	 * @throws Exception
+	 * @throws Exception String (这里描述输出参数的作用)
+	 * @throws
+	 * @author zslt_hyh
+	 * @date 2019年4月26日 下午3:11:15
 	 */
 	public static String sendToUrl(String sendtext, String urll,Integer seconds) throws Exception {
 		return sendToUrl(sendtext, urll, "utf-8", seconds);
 	}
 
+	
 	/**
-	 * 把内容发送给URL
-	 * 
+	 *  
+	 * @Title: sendToUrl
+	 * @Description: (这里用一句话描述这个方法的作用)
 	 * @param sendtext
 	 * @param urll
 	 * @param encoding
+	 * @param seconds
 	 * @return
-	 * @throws Exception
+	 * @throws Exception String (这里描述输出参数的作用)
+	 * @throws
+	 * @author zslt_hyh
+	 * @date 2019年4月26日 下午3:12:20
 	 */
 	public static String sendToUrl(String sendtext, String urll, String encoding, Integer seconds) throws Exception {
 		URL url = new URL(urll);
@@ -97,16 +116,18 @@ public class SendUtil {
 
 		return readStreamText(conn.getInputStream(), encoding);
 	}
-
-	/**
-	 * 从流中读取信息（比如从request请求中读取发送过来的内容request.getInputStream()）
-	 * 
-	 * @param sendtext
-	 * @param urll
-	 * @param encoding
-	 * @return
-	 * @throws Exception
-	 */
+    /**
+     * 
+     * @Title: readStreamText
+     * @Description: (这里用一句话描述这个方法的作用)
+     * @param stream
+     * @param encoding
+     * @return
+     * @throws Exception String (这里描述输出参数的作用)
+     * @throws
+     * @author zslt_hyh
+     * @date 2019年4月26日 下午3:14:02
+     */
 	public static String readStreamText(InputStream stream, String encoding) throws Exception {
 		StringBuffer sb = new StringBuffer();
 		BufferedReader br = null;
@@ -123,4 +144,10 @@ public class SendUtil {
 		}
 		return sb.toString();
 	}
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
 }
