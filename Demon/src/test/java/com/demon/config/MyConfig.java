@@ -19,6 +19,9 @@ public class MyConfig {
 	}
 	
 	/**dnmf对面，nf
+	 * kjkdgdflflsd
+	 * dklfjdklf
+	 * kdfjdf
 	
 	
 	 * GIfnmdf,dsT LERANR IS VERY GOOD
