@@ -14,7 +14,9 @@ import com.demon.serviceImp.CacheService;
 @Controller
 @RequestMapping("/redis")
 public class RedisController{
+	/**jkkdfjdkfd
 	
+	*/
 	@Autowired
 	private CacheService cacheService;
 	
