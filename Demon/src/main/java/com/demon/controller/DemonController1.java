@@ -32,7 +32,7 @@ public class DemonController1{
 	   System.out.println("xcxcxxc");
 	}
 			  
-	@RequestMapping("/query")
+	@RequestMapping("/querys")
 	public void query(){
 	   System.out.println("xcxcxxc");
 	   demonService.query();
