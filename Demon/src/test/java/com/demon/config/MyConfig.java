@@ -19,7 +19,7 @@ public class MyConfig {
 	}
 	
 	/**
-	 * GIT LERANR IS VERY GOOD
+	 * GIfnmdf,dsT LERANR IS VERY GOOD
 	 * FKLDSFJKAFJKSLAF
 	 */
 	
